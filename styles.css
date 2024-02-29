@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+p {
+    margin: 0;
+}
+
+.main-container {
+    margin: 0;
+    background-color: #FF4A7A;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    align-items: center;
+}
+
+.btn--play {
+    background-color: aqua;
+    border: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    font-size: 40px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    cursor: pointer;
+    animation: buttonPlay 2s infinite alternate;
+}
+
+.btn--no--play {
+    background-color: aqua;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    font-size: 40px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    cursor: pointer;
+    animation: none;
+}
+
+@keyframes buttonPlay {
+    100% {
+        transform: scale(0.25);
+    }
+}
+
+.scorePanel {
+    font-size: 40px;
+}
+
+.status--msg {
+    display: block;
+    font-size: 2rem;
+}
+
+.status--msg--hidden {
+    display: none;
+}
+
+.btn--reset{
+    display: block;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    border: none;
+    background-color: rgba(255,255,255,0);
+    text-decoration-line: underline;
+    font-size: 1.2rem;
+    transition: transform 0.5s;
+}
+
+.btn--reset:hover {
+    transform: scale(1.2);
+}
+
+.btn--reset--hidden {
+    display: none;
+    transition: transform 0.5s;
+}
